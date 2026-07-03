@@ -12,11 +12,11 @@ export default function WelcomeHome({ onViewChange }: WelcomeHomeProps) {
   // Your exact partner assets matched systematically
   const partnerLogos = [
     { name: "Africa Global Logistics (AGL)", src: "/assets/PARTERNS/images.png" },
-    { name: "EziMovers", src: "/assets/PARTERNS/images (1).jfif" },
-    { name: "Rwanda Airports Company", src: "/assets/PARTERNS/images (2).jfif" },
-    { name: "Mikumi Freight Forwarders", src: "/assets/PARTERNS/images (3).jfif" },
+    { name: "EziMovers", src: "/assets/PARTERNS/images (1).png" },
+    { name: "Rwanda Airports Company", src: "/assets/PARTERNS/images (2).png" },
+    { name: "Mikumi Freight Forwarders", src: "/assets/PARTERNS/images.png" },
     { name: "DP World", src: "/assets/PARTERNS/logo_1576363480.png" },
-    { name: "Magerwa", src: "/assets/PARTERNS/magerwa_logo.jfif" },
+    { name: "Magerwa", src: "/assets/PARTERNS/magerwa_logo.png" },
   ];
 
   // We duplicate the array to ensure an infinite, unbroken visual loop
@@ -140,6 +140,7 @@ export default function WelcomeHome({ onViewChange }: WelcomeHomeProps) {
                   fill
                   sizes="160px"
                   className="object-contain p-2"
+                  priority={index < 4} // This helps images load faster
                 />
               </div>
             ))}
