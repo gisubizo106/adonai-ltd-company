@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TopBar from "@/components/TopBar"; // 1. Import your new component
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/floatingwhatsapp";
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="antialiased">
+        <TopBar /> {/* 2. Place it here, above the Header */}
         <Header />
         <main>{children}</main>
         <Footer />

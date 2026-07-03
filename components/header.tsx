@@ -50,7 +50,7 @@ export default function Header() {
               <Link href="/#network" className="text-sm text-slate-700 hover:text-emerald-700 font-bold py-1">Clients</Link>
             </div>
           </div>
-
+          <Link href="/process" className="text-sm font-bold text-slate-900 hover:text-emerald-700">Process</Link>
           <Link href="/#contact" className="text-sm font-bold text-slate-900 hover:text-emerald-700">Contact</Link>
         </nav>
 
@@ -91,7 +91,7 @@ export default function Header() {
               <Link href="/#network" onClick={() => setMobileMenuOpen(false)} className="text-slate-700 text-sm py-1 font-bold">Clients</Link>
             </div>
           )}
-
+          <Link href="/process" onClick={() => setMobileMenuOpen(false)} className="text-slate-900 font-bold">Process</Link>
           <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-slate-900 font-bold">Contact</Link>
           <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="bg-emerald-600 text-center text-white font-bold py-3 rounded">Get a Quote</Link>
         </div>

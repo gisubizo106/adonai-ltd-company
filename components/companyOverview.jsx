@@ -24,11 +24,11 @@ export default function CompanyOverview() {
           <div className="grid sm:grid-cols-2 gap-8 pt-4">
             <div className="border-l-4 border-emerald-500 pl-4">
               <h4 className="font-bold text-slate-900 mb-1">Our Mission</h4>
-              <p className="text-sm text-slate-600">To provide unparalleled freight forwarding and customs solutions that empower businesses to scale across borders with confidence.</p>
+              <p className="text-sm text-slate-600">To deliver reliable, efficient, and customer-focused logistics, freight forwarding, transport, and customs clearance solutions that simplify trade, ensure timely delivery, and create value for our clients through professionalism, integrity, and innovation.</p>
             </div>
             <div className="border-l-4 border-emerald-500 pl-4">
               <h4 className="font-bold text-slate-900 mb-1">Our Vision</h4>
-              <p className="text-sm text-slate-600">To be the most trusted logistics partner in East Africa, known for reliability, digital integration, and customer-first service.</p>
+              <p className="text-sm text-slate-600">To become the leading and most trusted logistics and customs clearing company in Rwanda and the East African region, recognized for excellence, reliability, and world-class service. </p>
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ export const SERVICES_DATA = {
     icon: <Ship size={40} />,
     image: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=800&q=80",
     summary: "Air Freight, Sea Freight (FCL & LCL), Road Freight & Multimodal Transport",
-    description: "Our comprehensive freight forwarding solutions bridge continental gaps to seamlessly transport your goods across major international trade networks..."
+    description: "Our comprehensive freight forwarding solutions bridge continental gaps to seamlessly transport your goods across major international trade networks."
   },
   "customs-clearance": {
     title: " Customs Clearance",

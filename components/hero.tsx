@@ -4,16 +4,16 @@ import Link from 'next/link';
 import { ArrowRight, Search, ShieldCheck, Globe, Anchor } from 'lucide-react';
 
 export default function Hero() {
-  const heroSlides = [ "/assets/slide-1.PNG", "/assets/slide-3.PNG"];
+  const heroSlides = [ "/assets/slide-3.PNG"];
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [simulatedTrackingId, setSimulatedTrackingId] = useState("");
 
-  useEffect(() => {
-    const slideTimer = setInterval(() => {
-      setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-    }, 6000); 
-    return () => clearInterval(slideTimer);
-  }, [heroSlides.length]);
+  // useEffect(() => {
+  //   const slideTimer = setInterval(() => {
+  //     setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
+  //   }, 6000); 
+  //   return () => clearInterval(slideTimer);
+  // }, [heroSlides.length]);
 
   return (
     <section className="relative min-h-[90vh] flex items-center bg-slate-950 text-white overflow-hidden">
@@ -75,9 +75,9 @@ export default function Hero() {
             <Link href="/#contact" className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-emerald-600/20 group cursor-pointer border-none">
               Request Cargo Quote <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link href="/#services" className="border border-slate-700 hover:border-slate-500 bg-slate-900/40 backdrop-blur-md text-white font-semibold px-7 py-4 rounded-xl text-center transition-all cursor-pointer">
+            {/* <Link href="/#services" className="border border-slate-700 hover:border-slate-500 bg-slate-900/40 backdrop-blur-md text-white font-semibold px-7 py-4 rounded-xl text-center transition-all cursor-pointer">
               Explore Our Services
-            </Link>
+            </Link> */}
           </div>
         </div>
 

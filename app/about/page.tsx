@@ -26,19 +26,23 @@ export default function AboutPage() {
         <section className="grid md:grid-cols-3 gap-8">
           <div className="bg-emerald-50 p-8 rounded-2xl">
             <h3 className="font-bold text-emerald-800 mb-4">Mission</h3>
-            <p className="text-emerald-900 text-sm">To provide unparalleled freight forwarding and customs solutions that empower businesses to scale across borders with confidence.</p>
+            <p className="text-emerald-900 text-sm">To deliver reliable, efficient, and customer-focused logistics, freight forwarding, transport, and customs clearance solutions that simplify trade, ensure timely delivery, and create value for our clients through professionalism, integrity, and innovation.</p>
           </div>
           <div className="bg-emerald-50 p-8 rounded-2xl">
             <h3 className="font-bold text-emerald-800 mb-4">Vision</h3>
-            <p className="text-emerald-900 text-sm">To be the most trusted logistics partner in East Africa, known for reliability, digital integration, and customer-first service.</p>
+            <p className="text-emerald-900 text-sm">To become the leading and most trusted logistics and customs clearing company in Rwanda and the East African region, recognized for excellence, reliability, and world-class service.</p>
           </div>
           <div className="bg-emerald-50 p-8 rounded-2xl">
             <h3 className="font-bold text-emerald-800 mb-4">Core Values</h3>
             <ul className="text-emerald-900 text-sm space-y-2">
-              <li>• Reliability & Trust</li>
-              <li>• Operational Precision</li>
-              <li>• Customer-Centric Service</li>
-              <li>• Integrity in Customs</li>
+              <li>• Integrity</li>
+              <li>• Excellence</li>
+              <li>• Customer Satisfaction</li>
+              <li>• Professionalism</li>
+              <li>• Accountability</li>
+              <li>• Teamwork</li>
+              <li>• Innovation</li>
+              <li>• Reliability</li>
             </ul>
           </div>
         </section>
