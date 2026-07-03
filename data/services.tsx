@@ -93,7 +93,7 @@ export const PARTNERS_CLIENTS = [
   {
     id: "hass",
     name: "Hass",
-    image: "/assets/CLIENTS/Hass-Website-Logo-01.PNG",
+    image: "/assets/CLIENTS/Hass-Website-Logo-01.png",
     description: "Adonai Ltd provides specialized customs brokerage and freight forwarding for Hass, ensuring seamless supply chain integration.",
     solutions: ["Priority Customs Clearance", "Dedicated Freight Lanes"],
     // ... rest of your data
