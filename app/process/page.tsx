@@ -53,7 +53,7 @@ export default function ProcessPage() {
       {/* Hero Header Section from head.jpg */}
       <section className="relative w-full h-[300px] flex items-center bg-slate-900 overflow-hidden">
         <img 
-          src="assets/PLANE.PNG" 
+          src="assets/PLANE.png" 
           alt="Our Process" 
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
