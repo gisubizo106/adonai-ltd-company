@@ -102,13 +102,48 @@ export default function Header() {
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-
-      {/* MOBILE MENU */}
+{/* MOBILE MENU */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-slate-100 bg-white px-6 py-6 flex flex-col gap-6 shadow-lg absolute w-full left-0 z-50 min-h-screen">
           <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-slate-900 font-bold text-center">Home</Link>
-          {/* ... other mobile items ... */}
-          <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="bg-emerald-600 text-center text-white font-bold py-3 px-8 rounded w-full max-w-[200px] mx-auto">Get a Quote</Link>
+          
+          {/* Mobile Solutions */}
+          <div className="flex flex-col items-center gap-2">
+            <button onClick={() => setMobileSolutionsOpen(!mobileSolutionsOpen)} className="font-bold text-slate-900 flex items-center gap-1">
+              Solutions <ChevronDown size={18} />
+            </button>
+            {mobileSolutionsOpen && (
+              <div className="flex flex-col gap-2 bg-slate-50 w-full p-4 rounded-lg">
+                {Object.entries(SERVICES_DATA).map(([id, service]) => (
+                  <Link key={id} href={`/services/${id}`} onClick={() => setMobileMenuOpen(false)} className="text-sm text-center text-slate-700 font-bold py-1">
+                    {service.title.replace(/^\d+\.\s+/, '')}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Mobile Company */}
+          <div className="flex flex-col items-center gap-2">
+            <button onClick={() => setMobileCompanyOpen(!mobileCompanyOpen)} className="font-bold text-slate-900 flex items-center gap-1">
+              Company <ChevronDown size={18} />
+            </button>
+            {mobileCompanyOpen && (
+              <div className="flex flex-col gap-2 bg-slate-50 w-full p-4 rounded-lg text-center">
+                <Link href="/#why-us" onClick={() => setMobileMenuOpen(false)} className="text-sm text-slate-700 font-bold py-1">Why Us</Link>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-sm text-slate-700 font-bold py-1">About</Link>
+                <Link href="/teamdepartment" onClick={() => setMobileMenuOpen(false)} className="text-sm text-slate-700 font-bold py-1">Team</Link>
+                <Link href="/#network" onClick={() => setMobileMenuOpen(false)} className="text-sm text-slate-700 font-bold py-1">Clients</Link>
+              </div>
+            )}
+          </div>
+
+          <Link href="/process" onClick={() => setMobileMenuOpen(false)} className="text-slate-900 font-bold text-center">Process</Link>
+          <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="text-slate-900 font-bold text-center">Contact</Link>
+          
+          <Link href="/#contact" onClick={() => setMobileMenuOpen(false)} className="bg-emerald-600 text-center text-white font-bold py-3 px-8 rounded w-full max-w-[200px] mx-auto mt-4">
+            Get a Quote
+          </Link>
         </div>
       )}
     </header>
