@@ -23,9 +23,9 @@ export default function HomePage() {
       <Hero />
       <WelcomeHome onViewChange={handleViewChange} />
       <CompanyOverview />
-      {/* <div id="services">
+      <div id="services">
         <Services />
-      </div> */}
+      </div>
       <div id="whyus">
         <WhyUs />
       </div>
