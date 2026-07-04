@@ -111,21 +111,21 @@ export default function Contact() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-xs font-bold uppercase text-slate-700 mb-2">Full Name *</label>
-                <input type="text" required value={formData.fullName} onChange={e => setFormData({...formData, fullName: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="John Doe" />
+                <input type="text" required value={formData.fullName} onChange={e => setFormData({...formData, fullName: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="" />
               </div>
               <div>
                 <label className="block text-xs font-bold uppercase text-slate-700 mb-2">Company Name</label>
-                <input type="text" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="Enterprise Ltd" />
+                <input type="text" value={formData.company} onChange={e => setFormData({...formData, company: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="" />
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-xs font-bold uppercase text-slate-700 mb-2">Email Address *</label>
-                <input type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="john@company.com" />
+                <input type="email" required value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="" />
               </div>
               <div>
                 <label className="block text-xs font-bold uppercase text-slate-700 mb-2">Phone Number *</label>
-                <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="+250 788 000 000" />
+                <input type="tel" required value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 text-sm transition-colors text-slate-900" placeholder="" />
               </div>
             </div>
             <div>
